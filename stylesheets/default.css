@@ -1,10 +1,24 @@
+/*
+==========Colors==========
+#e1e1e1 light grey
+#b0b0b0 grey
+#7c7c7c dark grey
+#494949 charchoal
+#d47575 red
+#d4b875 yellow
+#79d475 green
+#75bfd4 blue
+#8c75d4 purple
+*/
+
 .debug {
   border: solid 1px red;
 }
 
 body {
   font-family: Courier, serif;
-  background-color: #fff4e6;/*cream*/
+  color: #3c2f2f;/*dark-brown*/
+  background-color: #be9b7b;/*light-brown*/
   margin: 3%;
 }
 
@@ -12,6 +26,9 @@ a {
   text-decoration: none;
   color: #3c2f2f;
 }
+  a:hover {
+    color: #854442;
+  }
 
 .banner {
   display: inline-block;
@@ -19,41 +36,47 @@ a {
 
 .navigation {
 }
-  .nav1,.nav2 {
+  .navigation a {
     padding: 1em;
     display: inline-block;
     margin-right: -10px;
-  }
-  .nav1 {
+    color: #fff4e6;
     background-color: #4b3832;/*brown*/
-    color: white;
+    border: solid 1px #854442;
   }
-  .nav2 {
-    background-color: #be9b7b;/*light-brown*/
-    color: black;
-  }
+    .navigation a:hover {
+      color:#4b3832;
+      background-color: #fff4e6;
+    }
+
   .home {
-    color: #4b3832;
-    background-color: #be9b7b;
-    border: solid 1px #4b3832;
+    color: #fff4e6;
+    background-color: #4b3832;
+    border: solid 3px #854442;
     float: right;
     vertical-align: top;
     padding: 1em;
     border-radius: 25%;
   }
+    .home:hover {
+      color:#4b3832;
+      background-color: #fff4e6;
+    }
 
 .latest {
-  width: 47%;
+  width: 46%;
   display: inline-block;
   margin: 1.5% 0;
   vertical-align: top;
   padding: 1%;
   min-height: 12em;
+  background-color: #fff4e6;/*cream*/
+  border: solid 3px #854442; /*rusty*/
 }
   .latest img {
     height: 100px;
     width: 100px;
-    border: solid 1px #3c2f2f;/*dark-brown*/
+    border: solid 1px #3c2f2f;
     margin: 2%;
     display: inline;
     float: left;
@@ -65,6 +88,8 @@ a {
 .aboutme {
   display: inline-block;
   padding: 1%;
+  background-color: #fff4e6;
+  border: solid 3px #854442;
 }
   .aboutme img {
     height: 200px;
@@ -84,7 +109,9 @@ a {
   .socialmedia ul {
     list-style: none;
   }
+
 footer {
+margin-top: 2em;
 text-align: center;
 font-size: .75em;
 }
