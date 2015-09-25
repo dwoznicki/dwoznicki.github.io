@@ -1,0 +1,90 @@
+.debug {
+  border: solid 1px red;
+}
+
+body {
+  font-family: Courier, serif;
+  background-color: #fff4e6;/*cream*/
+  margin: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: #3c2f2f;
+}
+
+.banner {
+  display: inline-block;
+}
+
+.navigation {
+}
+  .nav1,.nav2 {
+    padding: 1em;
+    display: inline-block;
+    margin-right: -10px;
+  }
+  .nav1 {
+    background-color: #4b3832;/*brown*/
+    color: white;
+  }
+  .nav2 {
+    background-color: #be9b7b;/*light-brown*/
+    color: black;
+  }
+  .home {
+    color: #4b3832;
+    background-color: #be9b7b;
+    border: solid 1px #4b3832;
+    float: right;
+    vertical-align: top;
+    padding: 1em;
+    border-radius: 25%;
+  }
+
+.latest {
+  width: 47%;
+  display: inline-block;
+  margin: 1.5% 0;
+  vertical-align: top;
+  padding: 1%;
+  min-height: 12em;
+}
+  .latest img {
+    height: 100px;
+    width: 100px;
+    border: solid 1px #3c2f2f;/*dark-brown*/
+    margin: 2%;
+    display: inline;
+    float: left;
+  }
+  .latest h2 {
+    margin-top: 0;
+  }
+
+.aboutme {
+  display: inline-block;
+  padding: 1%;
+}
+  .aboutme img {
+    height: 200px;
+    float: left;
+    margin-right: 2%;
+  }
+
+.socialmedia {
+  float: right;
+  position: relative;
+  }
+  .socialmedia img {
+    height: 40px;
+    display: block;
+    margin: 10% 0;
+  }
+  .socialmedia ul {
+    list-style: none;
+  }
+footer {
+text-align: center;
+font-size: .75em;
+}
