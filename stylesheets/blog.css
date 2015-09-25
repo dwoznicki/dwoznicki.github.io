@@ -36,3 +36,18 @@
     border: solid 1px #3c2f2f;
     margin: 2%;
   }
+.blogpost {
+  background-color: #fff4e6;/*cream*/
+  border: solid 3px #854442;
+  padding: 3%;
+  margin-top: 1.5%;
+}
+  .blogpost h1 {
+    text-align: center;
+  }
+  .blogpost img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 2%;
+  }
