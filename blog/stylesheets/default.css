@@ -1,0 +1,117 @@
+/*
+==========Colors==========
+#e1e1e1 light grey
+#b0b0b0 grey
+#7c7c7c dark grey
+#494949 charchoal
+#d47575 red
+#d4b875 yellow
+#79d475 green
+#75bfd4 blue
+#8c75d4 purple
+*/
+
+.debug {
+  border: solid 1px red;
+}
+
+body {
+  font-family: Courier, serif;
+  color: #3c2f2f;/*dark-brown*/
+  background-color: #be9b7b;/*light-brown*/
+  margin: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: #3c2f2f;
+}
+  a:hover {
+    color: #854442;
+  }
+
+.banner {
+  display: inline-block;
+}
+
+.navigation {
+}
+  .navigation a {
+    padding: 1em;
+    display: inline-block;
+    margin-right: -10px;
+    color: #fff4e6;
+    background-color: #4b3832;/*brown*/
+    border: solid 1px #854442;
+  }
+    .navigation a:hover {
+      color:#4b3832;
+      background-color: #fff4e6;
+    }
+
+  .home {
+    color: #fff4e6;
+    background-color: #4b3832;
+    border: solid 3px #854442;
+    float: right;
+    vertical-align: top;
+    padding: 1em;
+    border-radius: 25%;
+  }
+    .home:hover {
+      color:#4b3832;
+      background-color: #fff4e6;
+    }
+
+.latest {
+  width: 46%;
+  display: inline-block;
+  margin: 1.5% 0;
+  vertical-align: top;
+  padding: 1%;
+  min-height: 12em;
+  background-color: #fff4e6;/*cream*/
+  border: solid 3px #854442; /*rusty*/
+}
+  .latest img {
+    height: 100px;
+    width: 100px;
+    border: solid 1px #3c2f2f;
+    margin: 2%;
+    display: inline;
+    float: left;
+  }
+  .latest h2 {
+    margin-top: 0;
+  }
+
+.aboutme {
+  display: inline-block;
+  padding: 1%;
+  background-color: #fff4e6;
+  border: solid 3px #854442;
+}
+  .aboutme img {
+    height: 200px;
+    float: left;
+    margin-right: 2%;
+  }
+
+.socialmedia {
+  float: right;
+  position: relative;
+  }
+  .socialmedia img {
+    height: 40px;
+    display: block;
+    margin: 10% 0;
+  }
+  .socialmedia ul {
+    list-style: none;
+  }
+
+footer {
+margin-top: 2em;
+text-align: center;
+font-size: .75em;
+}
