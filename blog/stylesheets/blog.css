@@ -1,0 +1,53 @@
+.latest {
+  width: 25%;
+  height: 31em;
+  min-width: 275px;
+  min-height: 12em;
+  margin: 2% 0;
+  vertical-align: top;
+  padding: 1%;
+  background-color: #fff4e6;/*cream*/
+  border: solid 3px #854442; /*rusty*/
+}
+  .latest img {
+    height: 250px;
+    width: 250px;
+    border: solid 2px #3c2f2f;
+    float: none;
+    margin: auto;
+    display: block;
+  }
+
+.older {
+  display: inline-block;
+  margin: 1.5% 0;
+  width: 55%;
+}
+  .older div {
+    margin: 1.5% 0;
+    min-height: 75px;
+    background-color: #fff4e6;/*cream*/
+    border: solid 2px #854442;
+  }
+  .older img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    border: solid 1px #3c2f2f;
+    margin: 2%;
+  }
+.blogpost {
+  background-color: #fff4e6;/*cream*/
+  border: solid 3px #854442;
+  padding: 3%;
+  margin-top: 1.5%;
+}
+  .blogpost h1 {
+    text-align: center;
+  }
+  .blogpost img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 2%;
+  }

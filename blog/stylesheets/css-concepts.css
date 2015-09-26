@@ -1,0 +1,30 @@
+.blogpost img {
+  height: 110px;
+  width: 100px;
+}
+
+.example {
+  margin: auto;
+  padding: 3%;
+  width: 27%;
+  background-color: white;
+  border: solid 2px #854442;
+}
+  .inline div {
+    display: inline;
+    background-color: #e1a5a5; /*pastel red*/
+    border: solid 1px black;
+  }
+  .block div {
+    display: block;
+    height: 3em;
+    width: 5em;
+    background-color: #a5e1b5; /*pastel green*/
+    border: solid 1px black;
+  }
+  .inline-block div {
+    display: inline-block;
+    padding: 10px;
+    background-color: #a5b2e1; /*pastel blue*/
+    border: solid 1px black;
+  }

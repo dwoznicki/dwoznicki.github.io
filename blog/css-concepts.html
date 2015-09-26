@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/css-concepts.css">
+  <meta charset="utf-8">
+	<title>Week 3: inline vs. block vs. inline-block</title>
+</head>
+<body>
+  <h1 class="banner">Daniel Woznicki</h1>
+    <a href="dwoznicki.github.io" class="home">Home</a>
+    <nav class="navigation">
+      <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
+      <a href="#">Projects</a>
+      <a href="#">About me</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact</a>
+    </nav>
+	<article class="blogpost">
+		  <h1>Display: inline vs. block vs. inline-block</h1>
+      <img src="imgs/css_icon.png" alt="#">
+      <p>
+        This week we started looking into CSS (Cascading Style Sheets) to format the HTML practice we did last week. CSS is an integral part of web design. All the colors, fonts, buttons, menus, etc. that we have come to expect from websites is made in CSS. But for such an important part of the web, it sure can be abstruse to work with. Understanding all the various properties, what they do, and how they interact with each other is no mean feat, and I certainly don't mean to tackle it all in this post. So I'm going to focus on one property here: display.
+      </p>
+      <h4>What is display?</h4>
+      <p>
+        The display property indicates how an element is going to interact with other elements on the page. Is it going to take up a set amount of space? Is it going to sit alone on its line? There are three main properties to choose from when setting display: inline, block, and inline-block.
+      </p>
+    <section>
+      <h4>Display: inline;</h4>
+      <p>An element displayed inline will have 3 basic attributes.</p>
+        <ol>
+          <li>It will respect margins and padding on the left/right, but <strong>not</strong> the top/bottom.</li>
+          <li>It <strong>cannot</strong> have a set height or width. It will only take up as much space as necessary.</li>
+          <li>It will allow other elements to sit on the same line as it.</li>
+        </ol>
+      <p>
+        Inline is best for text or elements you want to appear in a paragraph. It's not good for pictures since it doesn't have a height or width.Here's an example of what inline elements look like.
+      </p>
+      <div class="example inline">
+        <div>These </div><div>elements </div><div>are </div><div>inline</div>
+      </div>
+    </section>
+    <section>
+      <h4>Display: block;</h4>
+      <p>A block element is pretty much what it sounds like. It's a block of space on the page. Here are its attributes.</p>
+        <ol>
+          <li>It will respect all margins and padding.</li>
+          <li>It can, and generally does, have a width and height.</li>
+          <li>It will <strong>force a line break</strong> after the element.</li>
+        </ol>
+      <p>
+        Blocks are useful for large pictures or spaces that should take up a whole line themselves. Here's an example of how blocks look.
+      </p>
+      <div class="example block">
+        <div>These</div><div>elements</div><div>are</div><div>blocks</div>
+      </div>
+    </section>
+    <section>
+      <h4>Display: inline-block;</h4>
+      <p>The last display value, inline-block, takes some attributes from both of its bretheren. Here's how it works.</p>
+        <ol>
+          <li>It will respect all margins and padding.</li>
+          <li>It often has a height and width.</li>
+          <li>It <strong>will allow</strong> other elements to sit on the same line as it.</li>
+        </ol>
+      <p>
+        Inline-blocks are ideal for pictures or spaces that need to take up space, but don't necessarily need a whole line. They're good for navigation menus and pictures in paragraph. Here's an example.
+      </p>
+      <div class="example inline-block">
+        <div>These</div><div>elements</div><div>are</div><div>inline-blocks</div>
+      </div>
+    </section>
+    <p>
+      That will conclude this week's blog. I hope you found something interesting, and I'll be back next week.</p>
+	</article>
+	<footer>
+  		<p>&copy; 2015 Daniel Woznicki</p>
+	</footer>
+</body>
+</html>
