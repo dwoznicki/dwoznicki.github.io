@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/css-concepts.css">
   <meta charset="utf-8">
-	<title>Week 3: inline vs. block vs. inline-block</title>
+	<title>Week 2 Blog</title>
 </head>
 <body>
-  <h1 class="banner">Daniel Woznicki</h1>
-    <a href="dwoznicki.github.io" class="home">Home</a>
-    <nav class="navigation">
-      <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
-      <a href="#">Projects</a>
-      <a href="#">About me</a>
-      <a href="#">Resume</a>
-      <a href="#">Contact</a>
-    </nav>
+  <div class="banner">
+    <div class="bannerbox"></div>
+    <p>danielWoznicki<span class="red">;</span></p>
+  </div>
+  <nav class="navigation">
+    <a href="dwoznicki.github.io">Home</a>
+    <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
+    <a href="#">Projects</a>
+    <a href="#">About me</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact</a>
+  </nav>
+<section class="content">
 	<article class="blogpost">
-		  <h1>Display: inline vs. block vs. inline-block</h1>
+      <h1>Display: inline vs. block vs. inline-block</h1>
       <img src="imgs/css_icon.png" alt="#">
       <p>
-        This week we started looking into CSS (Cascading Style Sheets) to format the HTML practice we did last week. CSS is an integral part of web design. All the colors, fonts, buttons, menus, etc. that we have come to expect from websites is made in CSS. But for such an important part of the web, it sure can be abstruse to work with. Understanding all the various properties, what they do, and how they interact with each other is no mean feat, and I certainly don't mean to tackle it all in this post. So I'm going to focus on one property here: display.
+        This week we started looking into CSS (Cascading Style Sheets) to format the HTML practice we did last week. CSS is an integral part of web design. All the colors, fonts, buttons, menus, etc. that we have come to expect from websites are made in CSS. But for such an important part of the web, it sure can be abstruse to work with. Understanding all the various properties, what they do, and how they interact with each other is no mean feat, and I certainly don't mean to tackle it all in this post. So I'm going to focus on one property here: display.
       </p>
       <h4>What is display?</h4>
       <p>
@@ -59,7 +63,7 @@
     </section>
     <section>
       <h4>Display: inline-block;</h4>
-      <p>The last display value, inline-block, takes some attributes from both of its bretheren. Here's how it works.</p>
+      <p>The last display value, inline-block, takes some attributes from both of its brethren. Here's how it works.</p>
         <ol>
           <li>It will respect all margins and padding.</li>
           <li>It often has a height and width.</li>
@@ -73,8 +77,9 @@
       </div>
     </section>
     <p>
-      That will conclude this week's blog. I hope you found something interesting, and I'll be back next week.</p>
+      That concludes this week's blog. I hope you found something interesting, and I'll be back next week.</p>
 	</article>
+</section>
 	<footer>
   		<p>&copy; 2015 Daniel Woznicki</p>
 	</footer>

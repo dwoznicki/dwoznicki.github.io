@@ -1,13 +1,10 @@
 .latest {
-  width: 25%;
-  height: 31em;
-  min-width: 275px;
-  min-height: 12em;
-  margin: 2% 0;
+  width: 35%;
+  display: inline-block;
+  margin: 1.5% 1%;
   vertical-align: top;
   padding: 1%;
-  background-color: #fff4e6;/*cream*/
-  border: solid 3px #854442; /*rusty*/
+  min-height: 12em;
 }
   .latest img {
     height: 250px;
@@ -20,14 +17,14 @@
 
 .older {
   display: inline-block;
-  margin: 1.5% 0;
+  margin-left: 1%;
   width: 55%;
+  text-align: left;
 }
   .older div {
-    margin: 1.5% 0;
     min-height: 75px;
-    background-color: #fff4e6;/*cream*/
-    border: solid 2px #854442;
+    background-color: #9ec2d8;
+    border-radius: 10px;
   }
   .older img {
     height: 50px;
@@ -36,16 +33,25 @@
     border: solid 1px #3c2f2f;
     margin: 2%;
   }
+  .older h3 {
+    position: relative;
+    top: 1.5em;
+  }
+  .older div:hover {
+    background-color: #bbd4e3;
+  }
 .blogpost {
-  background-color: #fff4e6;/*cream*/
-  border: solid 3px #854442;
+  background-color: #9ec2d8;
+  border-radius: 10px;
   padding: 3%;
   margin-top: 1.5%;
+  text-align: left;
 }
   .blogpost h1 {
     text-align: center;
   }
   .blogpost img {
+    display: inline-block;
     height: 100px;
     width: 100px;
     float: left;
