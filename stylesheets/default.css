@@ -1,14 +1,15 @@
 /*
 ==========Colors==========
+#f5faff white grey
 #e1e1e1 light grey
 #b0b0b0 grey
 #7c7c7c dark grey
 #494949 charchoal
-#d47575 red
-#d4b875 yellow
-#79d475 green
-#75bfd4 blue
-#8c75d4 purple
+#9ec2d8 base blue
+#7e9bac darker blue
+#b1cedf lighter blue
+#bbd4e3 even lighter
+#ff5555 red
 */
 
 .debug {
@@ -16,40 +17,63 @@
 }
 
 body {
-  font-family: Courier, serif;
-  color: #3c2f2f;/*dark-brown*/
-  background-color: #be9b7b;/*light-brown*/
-  margin: 3%;
+  font-family: "Trebuchet MS", serif;
+  color: black;
+  background-color: #494949;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
   color: #3c2f2f;
 }
-  a:hover {
-    color: #854442;
-  }
 
-.banner {
-  display: inline-block;
+.red {
+  color: #ff5555;
 }
 
+.banner {
+  background-image: url("../imgs/banner1.png");
+  background-repeat: repeat-x;
+  height: 150px;
+  width: 101%;
+  text-align: center;
+}
+  .bannerbox {
+    position: relative;
+    top: 35%;
+    height: 4.5em;
+    width: 31em;
+    margin: auto;
+    background-color: #9ec2d8;
+    border: solid 2px black;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  .banner p {
+    position: relative;
+    bottom: 60%;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
 .navigation {
+  text-align: center;
 }
   .navigation a {
     padding: 1em;
     display: inline-block;
     margin-right: -10px;
     color: #fff4e6;
-    background-color: #4b3832;/*brown*/
-    border: solid 1px #854442;
+    background-color: #494949;
   }
     .navigation a:hover {
-      color:#4b3832;
-      background-color: #fff4e6;
+      color: black;
+      background-color: #f5faff;
     }
 
-  .home {
+/*
+    .home {
     color: #fff4e6;
     background-color: #4b3832;
     border: solid 3px #854442;
@@ -62,16 +86,24 @@ a {
       color:#4b3832;
       background-color: #fff4e6;
     }
+*/
+
+.content {
+  background-color: #f5faff;
+  width: 99%;
+  padding: 1%;
+  text-align: center;
+}
 
 .latest {
-  width: 46%;
+  width: 35%;
   display: inline-block;
-  margin: 1.5% 0;
+  margin: 1.5% 1%;
   vertical-align: top;
   padding: 1%;
   min-height: 12em;
-  background-color: #fff4e6;/*cream*/
-  border: solid 3px #854442; /*rusty*/
+  background-color: #9ec2d8;
+  border-radius: 10px;
 }
   .latest img {
     height: 100px;
@@ -84,34 +116,48 @@ a {
   .latest h2 {
     margin-top: 0;
   }
+  .latest:hover {
+    background-color: #bbd4e3;
+  }
 
 .aboutme {
   display: inline-block;
   padding: 1%;
-  background-color: #fff4e6;
-  border: solid 3px #854442;
+  margin: 0 1% 1% 1%;
+  width: 75%;
+  background-color: #9ec2d8;
+  border-radius: 10px;
 }
   .aboutme img {
     height: 200px;
     float: left;
     margin-right: 2%;
+    border-radius: 10px;
+  }
+  .aboutme:hover {
+    background-color: #bbd4e3;
   }
 
 .socialmedia {
   float: right;
   position: relative;
   }
+  .socialmedia ul {
+  list-style: none;
+  }
   .socialmedia img {
     height: 40px;
     display: block;
-    margin: 10% 0;
+    margin: 5px;
   }
-  .socialmedia ul {
-    list-style: none;
+  .socialmedia img:hover {
+    height: 50px;
+    margin: 0px;
   }
 
 footer {
-margin-top: 2em;
-text-align: center;
-font-size: .75em;
+  margin-top: 2em;
+  text-align: center;
+  font-size: .75em;
+  color: white;
 }
