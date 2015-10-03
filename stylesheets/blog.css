@@ -57,3 +57,10 @@
     float: left;
     margin-right: 2%;
   }
+
+code {
+  display: inline-block;
+  padding: .5em;
+  border-radius: 5px;
+  background-color: #b1cedf;
+}
