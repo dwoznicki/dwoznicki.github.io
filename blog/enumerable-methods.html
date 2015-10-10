@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="utf-8">
+	<title>The Enumerable#map Method</title>
+</head>
+<body>
+  <div class="banner">
+    <div class="bannerbox"></div>
+    <p>danielWoznicki<span class="red">;</span></p>
+  </div>
+  <nav class="navigation">
+    <a href="http://dwoznicki.github.io">Home</a>
+    <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
+    <a href="http://dwoznicki.github.io/projects-index.html">Projects</a>
+    <a href="http://dwoznicki.github.io/aboutme.html">About me</a>
+    <a href="http://dwoznicki.github.io/resume.html">Resume</a>
+    <a href="http://dwoznicki.github.io/contact.html">Contact</a>
+  </nav>
+<section class="content">
+	<article class="blogpost">
+    <h1>The Enumerable#map Method</h1>
+    <img src="../imgs/map.png" alt="#">
+    <p>
+      This week we continued to learn about ruby. One of our focuses was ruby enumerables and how to interact with them. To that end, I'll be talking about a very useful method ruby has built in for working with enumerables: <code>map</code>. But let's start with enumerables.
+    </p>
+    <h3>What is an enumerable?</h3>
+    <p>
+      Enumerables fall into an odd ruby category called "modules". Modules are containers for methods and constants that can be applied to multiple unrelated classes. Normally, you could only share methods through inheritance. But ruby gives you the option of writing methods that work with several objects without them needing to be related to one another.
+    </p>
+    <p>
+      This is all very handy for enumerables which apply to <strong>collections of objects</strong> in ruby. Some common collections you'll see are:
+    </p>
+    <ul>
+      <li><code>Arrays [1, 2, 3]</code></li>
+      <li><code>Hashes { name: "Ken", type: "leopard gecko", age: 4 }</code></li>
+      <li><code>Ranges (1..10)</code></li>
+    </ul>
+    <p>
+      Although all these objects do not fall under a single superclass, ruby still has a list of methods, enumerables, that can by applied to them. One of these commands is <code>map</code>. Let's look at it now.
+    </p>
+    <h3>What is <code>map</code> and how does it work?</h3>
+    <p>
+      <code>Map</code> is one of ruby's built in enumerable methods that you can apply to collections, such as the ones above. <code>Map</code> <strong>will take a collection and apply a block of code for each object in the collection, returning an array of the results.</strong> Sounds a bit like <code>each</code> right? It should because all methods in the enumerable module are based on iterating over a collection. What makes <code>map</code> special is that it <em>returns an array</em> after its done. The syntax looks like this:
+    </p>
+    <pre><code>
+      collection.map { |object| block }
+      => [array]
+    </code></pre>
+    <p>
+      If you don't pass in a block, <code>map</code> will return an enumerator with the original collection. From there, you're free to make it doe what you please.
+    </p>
+    <h3>How can I use <code>map</code>?</h3>
+    <p>
+      <code>Map</code> is perfect when you want to output an array. Instead of going through the process of making a new array, iterating over the collection and pushing each object into the new array, you can simply use <code>map</code>! So let's say you had a range of numbers, like so:
+    </p>
+      <p><code>range = 1..10</code></p>
+    <p>
+    Your goal is to take every number in <code>range</code> and square it, putting the squares in a new array <code>squared</code>. This is the perfect kind of situation for <code>map</code>.
+    </p>
+    <pre><code>
+      >> range = 1..10
+      >> squared = range.map { |num| num**2 }
+      =>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+    </code></pre>
+    <p>
+      Note, <code>map</code> will apply <em>any block of code</em> for each item in the collection. Although it might be odd, the block doesn't necessarily need to be related to the collection. That means
+    </p>
+    <pre><code>
+      >> ["a", "b", "c"].map {"chicken"}
+      => ["chicken", "chicken", "chicken"]
+    </code></pre>
+    <p>
+      is totally valid as far as ruby is concerned. All its interested in doing is applying the block once for each item in the collection.
+    </p>
+    <p>
+      Anyway, I hope this helped you understand a bit more about enumerables and <code>map</code>. I'll be back next week!
+    </p>
+	</article>
+</section>
+	<footer>
+  		<p>&copy; 2015 Daniel Woznicki</p>
+	</footer>
+</body>
+</html>
