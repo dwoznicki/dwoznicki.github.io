@@ -36,25 +36,24 @@ a {
   background-image: url("../imgs/banner1.png");
   background-repeat: repeat-x;
   height: 150px;
-  width: 101%;
   text-align: center;
 }
   .bannerbox {
     position: relative;
     top: 35%;
-    height: 4.5em;
-    width: 31em;
-    margin: auto;
+    height: 4em;
+    width: 20em;
     background-color: #9ec2d8;
     border: solid 2px black;
     border-radius: 10px;
     opacity: 0.9;
   }
-  .banner p {
+  .banner h1 {
     position: relative;
-    bottom: 60%;
-    font-size: 4em;
+    bottom: 20%;
+    font-size: 2.5em;
     font-weight: bold;
+    text-align: center;
   }
 
 .navigation {
@@ -72,67 +71,52 @@ a {
       background-color: #f5faff;
     }
 
-/*
-    .home {
-    color: #fff4e6;
-    background-color: #4b3832;
-    border: solid 3px #854442;
-    float: right;
-    vertical-align: top;
-    padding: 1em;
-    border-radius: 25%;
-  }
-    .home:hover {
-      color:#4b3832;
-      background-color: #fff4e6;
-    }
-*/
-
 .content {
+  width: 100%;
   background-color: #f5faff;
-  width: 99%;
-  padding: 1%;
   text-align: center;
 }
 
 .latest {
-  width: 35%;
-  display: inline-block;
-  margin: 1.5% 1%;
   vertical-align: top;
+  margin: 1%;
   padding: 1%;
   min-height: 12em;
   background-color: #9ec2d8;
   border-radius: 10px;
+  text-align: left;
 }
   .latest img {
     height: 100px;
     width: 100px;
-    border: solid 1px #3c2f2f;
-    margin: 2%;
-    display: inline;
+    margin: 4%;
+    display: inline-block;
     float: left;
   }
-  .latest h2 {
-    margin-top: 0;
+  .latest p {
+    margin: 1% 5%;
   }
   .latest:hover {
     background-color: #bbd4e3;
   }
 
 .aboutme {
-  display: inline-block;
+  margin: 1%;
   padding: 1%;
-  margin: 0 1% 1% 1%;
-  width: 75%;
   background-color: #9ec2d8;
   border-radius: 10px;
+  text-align: left;
 }
   .aboutme img {
-    height: 200px;
     float: left;
-    margin-right: 2%;
-    border-radius: 10px;
+    margin: 1%;
+    height: 200px;
+  }
+  .aboutme h2, p {
+    margin: 1% 5%;
+  }
+  .aboutme h2 {
+    display: inline-block;
   }
   .aboutme:hover {
     background-color: #bbd4e3;
@@ -140,7 +124,6 @@ a {
 
 .socialmedia {
   float: right;
-  position: relative;
   }
   .socialmedia ul {
   list-style: none;
@@ -156,7 +139,7 @@ a {
   }
 
 footer {
-  margin-top: 2em;
+  margin: 2em 0;
   text-align: center;
   font-size: .75em;
   color: white;
