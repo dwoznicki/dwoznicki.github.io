@@ -9,7 +9,6 @@
   .latest img {
     height: 250px;
     width: 250px;
-    border: solid 2px #3c2f2f;
     float: none;
     margin: auto;
     display: block;
@@ -30,7 +29,6 @@
     height: 50px;
     width: 50px;
     float: left;
-    border: solid 1px #3c2f2f;
     margin: 2%;
   }
   .older h3 {
