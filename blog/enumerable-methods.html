@@ -24,14 +24,14 @@
     <h1>The Enumerable#map Method</h1>
     <img src="../imgs/map.png" alt="#">
     <p>
-      This week we continued to learn about ruby. One of our focuses was ruby enumerables and how to interact with them. To that end, I'll be talking about a very useful method ruby has built in for working with enumerables: <code>map</code>. But let's start with enumerables.
+      This week we continued to learn about ruby. One of our focuses was ruby Enumerables and how to interact with them. To that end, I'll be talking about a very useful method ruby has built in for working with Enumerables: <code>map</code>. But let's start with Enumerables.
     </p>
-    <h3>What is an enumerable?</h3>
+    <h3>What is an Enumerable?</h3>
     <p>
       Enumerables fall into an odd ruby category called "modules". Modules are containers for methods and constants that can be applied to multiple unrelated classes. Normally, you could only share methods through inheritance. But ruby gives you the option of writing methods that work with several objects without them needing to be related to one another.
     </p>
     <p>
-      This is all very handy for enumerables which apply to <strong>collections of objects</strong> in ruby. Some common collections you'll see are:
+      This is all very handy for Enumerables which apply to <strong>collections of objects</strong> in ruby. Some common collections you'll see are:
     </p>
     <ul>
       <li><code>Arrays [1, 2, 3]</code></li>
@@ -39,18 +39,18 @@
       <li><code>Ranges (1..10)</code></li>
     </ul>
     <p>
-      Although all these objects do not fall under a single superclass, ruby still has a list of methods, enumerables, that can by applied to them. One of these commands is <code>map</code>. Let's look at it now.
+      Although all these objects do not fall under a single superclass, ruby still has a list of methods, Enumerables, that can by applied to them. One of these commands is <code>map</code>. Let's look at it now.
     </p>
     <h3>What is <code>map</code> and how does it work?</h3>
     <p>
-      <code>Map</code> is one of ruby's built in enumerable methods that you can apply to collections, such as the ones above. <code>Map</code> <strong>will take a collection and apply a block of code for each object in the collection, returning an array of the results.</strong> Sounds a bit like <code>each</code> right? It should because all methods in the enumerable module are based on iterating over a collection. What makes <code>map</code> special is that it <em>returns an array</em> after its done. The syntax looks like this:
+      <code>Map</code> is one of ruby's built in Enumerable methods that you can apply to collections, such as the ones above. <code>Map</code> <strong>will take a collection and apply a block of code for each object in the collection, returning an array of the results.</strong> Sounds a bit like <code>each</code> right? It should because all methods in the Enumerable module are based on iterating over a collection. What makes <code>map</code> special is that it <em>returns an array</em> after its done. The syntax looks like this:
     </p>
     <pre><code>
       collection.map { |object| block }
       => [array]
     </code></pre>
     <p>
-      If you don't pass in a block, <code>map</code> will return an enumerator with the original collection. From there, you're free to make it doe what you please.
+      If you don't pass in a block, <code>map</code> will return an Enumerator with the original collection. From there, you're free to make it do what you please.
     </p>
     <h3>How can I use <code>map</code>?</h3>
     <p>
