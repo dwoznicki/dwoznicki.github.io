@@ -55,6 +55,13 @@
     float: left;
     margin-right: 2%;
   }
+    .blogpost img.bigpic {
+      margin-left: 5%;
+      display: block;
+      float: none;
+      height: 40%;
+      width: 40%;
+    }
 
 code {
   display: inline-block;

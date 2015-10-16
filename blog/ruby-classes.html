@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/ruby-classes.css">
+  <meta charset="utf-8">
+  <title>Ruby Classes</title>
+</head>
+<body>
+  <div class="banner span-12-t span-12-d">
+    <div class="bannerbox container"></div>
+    <h1>danielWoznicki<span class="red">;</span></h1>
+  </div>
+  <nav class="navigation">
+    <a href="http://dwoznicki.github.io">Home</a>
+    <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
+    <a href="http://dwoznicki.github.io/projects-index.html">Projects</a>
+    <a href="http://dwoznicki.github.io/aboutme.html">About me</a>
+    <a href="http://dwoznicki.github.io/resume.html">Resume</a>
+    <a href="http://dwoznicki.github.io/contact.html">Contact</a>
+  </nav>
+<section class="content">
+  <article class="blogpost">
+    <h1>Ruby Classes</h1>
+    <img src="../imgs/dog.png" alt="#">
+    <p>
+      This week, we spent a fair amount of time studying classes in Ruby. Classes are very important in Ruby as they define the characteristics of objects (such as strings, integers, etc.) as well as what methods you can use with them. For example, the string class tells the computer how to handle a string, as well as that the #length method should return an integer equal to the number of characters inside the string. But classes aren't limited to pre existing ones; you can make your own as well. But how would you make a class? What goes into it? Well, we're going to look at a sample class today.
+    </p>
+    <h3>Our Sample Class</h3>
+    <p>
+      A good way to start is to imagine your class as a real world object. In this case, we're going to make a <code>Dog</code> class.
+    </p>
+    <img src="../imgs/dog1.png" alt="#" class="bigpic">
+    <p>
+      Let's start out by defining our dog class.
+    </p>
+    <pre><code>
+      > class Dog
+      >
+      > end
+    </code></pre>
+    <p>
+      Now we need to consider what attributes and actions our <code>Dog</code> class will have. Classes excel when you want to making several instances of something, but all with the same basic characteristics. Not all dogs are the same, but they do all have a lot in common. So what makes a <code>Dog</code> a <code>Dog</code>?
+    </p>
+    <h3>Instance Variables</h3>
+    <p>
+      Picture a dog in your mind. Good. Now picture another. And another. Okay, stop picturing dogs (if you want). What qualities did your dogs possess? What differentiated each one from the others? In Ruby, we can define these qualities inside a class using something called <strong>instance variables</strong>. Instance variables are common attributes that you can assign and change for each instance of the class. One way to define these attributes is with the Ruby class method <code>initialize</code>. For example:
+    </p>
+    <pre><code>
+      > Class Dog
+      >   def initialize(name, age, breed, bark)
+      >     @name = name
+      >     @age = age
+      >     @breed = breed
+      >     @bark = bark
+      >   end
+      > end
+    </code></pre>
+    <p>
+      This class has four instance variables: <code>@name</code>, <code>@age</code>, <code>@breed</code>, and <code>@bark</code>. When the user creates a new <code>Dog</code>, they can set these instance variables by passing in the three arguments they want to use for their instance of the class. In this case, we'll use this guy:
+    </p>
+    <img src="../imgs/dog2.png" alt="#" class="bigpic">
+    <pre><code>
+      > howard = Dog.new("Howard", 2, "Old English Sheepdog", "Woof woof!")
+      =>Dog: @name="Howard", @age=2, @breed="Old English Sheepdog", @bark="Woof woof!"
+    </code></pre>
+    <p>
+      Notice anything familiar? Making a new instance of the <code>Dog</code> class uses the same syntax as you would for making a new array, or a new hash. The <code>ClassName.new</code> method is common in Ruby when making a new object, and your classes are no different.
+    </p>
+    <p>
+      So what now? We have our dog, what can it do?
+    </p>
+    <h3>Instance Methods</h3>
+    <p>
+      If instance variables define what a <code>Dog</code> is, then <strong>instance methods</strong> define what a <code>Dog</code> can do. These are the actions your dog can take, and those you can take upon it. This can get overwhelming very quickly, so let's consider only one action for our <code>Dog</code> for now: barking. We can define this method inside our class much the same way you'd define any other method:
+    </p>
+        <pre><code>
+      > Class Dog
+      >   def initialize(name, age, breed)
+      >     @name = name
+      >     @age = age
+      >     @breed = breed
+      >     @bark = bark
+      >   end
+      >
+      >   def sound
+      >     puts bark
+      >   end
+      > end
+    </code></pre>
+    <p>
+      Now, when we make a new dog, we can call the <code>sound</code> method to hear its bark.
+    </p>
+    <pre><code>
+      > howard = Dog.new("Howard", 2, "Old English Sheepdog", "Woof woof!")
+      =>Dog: @name="Howard", @age=2, @breed="Old English Sheepdog", @bark="Woof woof!"
+      > howard.sound
+      => "Woof woof!"
+    </code></pre>
+    <p>
+      Again, we call the method on our class the same way you'd call a method on any other class. Instance methods allow for a lot of flexibility and power in classes. These are what set classes apart and make them extremely useful tools in coding.
+    </p>
+    <p>
+      That's all for this week. Thanks for reading.
+    </p>
+  </article>
+</section>
+  <footer>
+      <p>&copy; 2015 Daniel Woznicki</p>
+  </footer>
+</body>
+</html>
