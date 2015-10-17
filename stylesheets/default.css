@@ -71,72 +71,20 @@ a {
       background-color: #f5faff;
     }
 
-.content {
+.backdrop {
   width: 100%;
   background-color: #f5faff;
   text-align: center;
 }
 
-.latest {
+.content {
+  margin: 1%;
+  padding: 1%;
   vertical-align: top;
-  margin: 1%;
-  padding: 1%;
-  min-height: 12em;
   background-color: #9ec2d8;
   border-radius: 10px;
   text-align: left;
 }
-  .latest img {
-    height: 100px;
-    width: 100px;
-    margin: 4%;
-    display: inline-block;
-    float: left;
-  }
-  .latest p {
-    margin: 1% 5%;
-  }
-  .latest:hover {
-    background-color: #bbd4e3;
-  }
-
-.aboutme {
-  margin: 1%;
-  padding: 1%;
-  background-color: #9ec2d8;
-  border-radius: 10px;
-  text-align: left;
-}
-  .aboutme img {
-    float: left;
-    margin: 1%;
-    height: 200px;
-  }
-  .aboutme h2, p {
-    margin: 1% 5%;
-  }
-  .aboutme h2 {
-    display: inline-block;
-  }
-  .aboutme:hover {
-    background-color: #bbd4e3;
-  }
-
-.socialmedia {
-  float: right;
-  }
-  .socialmedia ul {
-  list-style: none;
-  }
-  .socialmedia img {
-    height: 40px;
-    display: block;
-    margin: 5px;
-  }
-  .socialmedia img:hover {
-    height: 50px;
-    margin: 0px;
-  }
 
 footer {
   margin: 2em 0;
