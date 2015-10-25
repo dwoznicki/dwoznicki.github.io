@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="utf-8">
+  <title>Ruby vs. JavaScript</title>
+</head>
+<body>
+  <div class="banner span-12-t span-12-d">
+    <div class="bannerbox container"></div>
+    <h1>danielWoznicki<span class="red">;</span></h1>
+  </div>
+  <nav class="navigation">
+    <a href="http://dwoznicki.github.io">Home</a>
+    <a href="http://dwoznicki.github.io/blog-index.html">Blog</a>
+    <a href="http://dwoznicki.github.io/projects-index.html">Projects</a>
+    <a href="http://dwoznicki.github.io/aboutme.html">About me</a>
+    <a href="http://dwoznicki.github.io/resume.html">Resume</a>
+    <a href="http://dwoznicki.github.io/contact.html">Contact</a>
+  </nav>
+<section class="backdrop container">
+  <article class="blogpost">
+    <h1>Ruby vs. JavaScript</h1>
+    <img src="../imgs/javascript_logo.png" alt="#">
+    <p>
+      This week our class started looking into JavaScript. JavaScript (JS) is a powerful language that adds a lot of functionality to web apps. It has some very simple integration with HTML and is widely supported across browsers, making it ideal for adding script to a web page.
+    </p>
+    <p>
+      That said, it's certainly been a challenge switching over from Ruby to JS for me. Ruby's high level, clean look is hard to maintain in JS (for me at least). I can't help but look back fondly and compare some of the concepts I'm studying in JS with things I learned in Ruby. So in this post, I'm going to compare two important objects: the Ruby class and the JavaScript constructor function.
+    </p>
+    <h3>What is a Ruby class?</h3>
+    <p>
+      The Ruby class is an object that can be used as a guideline for making other objects. It's a blueprint of sorts. Classes can inherit properties and methods from their parents, and indeed often do. Ruby is a language of classes, in fact. Objects are just instances of classes, which is why you can always use the <code>new</code> method to make new strings, arrays, etc.
+    </p>
+    <p>
+      The syntax for a Ruby class looks like this:
+    </p>
+    <pre><code>
+      > class Example
+      >   def initialize
+      >     @sentence = "This is an example sentence."
+      >   end
+      >   def talk
+      >     puts @sentence
+      >   end
+      > end
+      >
+      > instance = Example.new
+      > instance.talk
+      => This is an example class.
+    </code></pre>
+    <p>
+      There are a few things to note here. First, the <code>initialize</code> method is the first thing that runs when you make a new instance of your class. This sets up all the properties for the class. Second, you can instantiate the class using the <code>new</code> method. <code>New</code> is a method of the class object in Ruby. Lastly, you can define instance variable inside the class. Instance variables are marked by the @ symbol before the name. These variables can be used by any method inside the class; in this case, <code>talk</code>.
+    </p>
+    <h3>What is a JavaScript constructor?</h3>
+    <p>
+      Unlike the Ruby class, the JS constructor is actually a function. This was a little odd to me at first since I associated functions with Ruby methods. But the JS constructor function actually plays a very similar role to the Ruby class. Let's look at an example:
+    </p>
+    <pre><code>
+      > function Example() {
+      >   this.sentence = "This is also an example sentence.";
+      >   this.talk = function() {
+      >     console.log(this.sentence);
+      >   }
+      > }
+      >
+      > var instance = new Example();
+      > instance.talk();
+      => This is also an example sentence.
+    </code></pre>
+    <p>
+      It's pretty similar, but not quite the same. The first thing you might notice is that there's no method to initialize the constructor. Since the constructor is a function, we can simply assign the properties (<code>this.sentence</code>) at the beginning and that code will run first. <code>This</code> binds the properties to the constructor function, similar to a Ruby instance variable or method. However, the most important piece is probably the <code>new</code> operator.
+    </p>
+    <p>
+      <code>New</code> does a number of things.
+    </p>
+    <ol>
+      <li>makes a new object</li>
+      <li>connects the new object to the <code>constructor</code></li>
+      <li>binds <code>this</code> to new object</li>
+      <li>runs the constructor function</li>
+    </ol>
+    <p>
+      This is what really defines an instance of the constructor function, and makes it similar to a Ruby class.
+    </p>
+    <p>That's all for this week. Thanks for reading.</p>
+  </article>
+</section>
+  <footer>
+      <p>&copy; 2015 Daniel Woznicki</p>
+  </footer>
+</body>
+</html>
