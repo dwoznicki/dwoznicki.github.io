@@ -16,6 +16,7 @@
   border: solid 1px red;
 }
 
+/*=====Essential Page Formatting=====*/
 body {
   font-family: "Trebuchet MS", serif;
   color: black;
@@ -92,3 +93,5 @@ footer {
   font-size: .75em;
   color: white;
 }
+
+/*=====Shared Formatting=====*/
