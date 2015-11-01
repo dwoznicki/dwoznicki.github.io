@@ -48,12 +48,7 @@
   .blogpost h1 {
     text-align: center;
   }
-  .blogpost img {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    float: left;
-    margin-right: 2%;
+
   }
     .blogpost img.bigpic {
       margin-left: 5%;
@@ -62,10 +57,3 @@
       height: 40%;
       width: 40%;
     }
-
-code {
-  display: inline-block;
-  padding: .5em;
-  border-radius: 5px;
-  background-color: #b1cedf;
-}
