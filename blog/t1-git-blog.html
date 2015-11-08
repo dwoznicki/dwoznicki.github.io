@@ -3,9 +3,9 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css">
   <meta charset="utf-8">
-	<title>Blog Template</title>
+	<title>Learning About Git</title>
 </head>
 <body>
   <div class="banner span-12-t span-12-d">
@@ -20,12 +20,10 @@
     <a href="http://dwoznicki.github.io/resume.html">Resume</a>
     <a href="http://dwoznicki.github.io/contact.html">Contact</a>
   </nav>
-<section class="content">
-	<article class="blogpost">
-      <h1>Dev Bootcamp Week 1: Learning About git</h1>
-      <img src="imgs/github-logo.png" alt="#">
-  <h4>A look into git and its uses.</h4>
-  <h4>September 10, 2015</h4>
+<section class="backdrop container">
+	<article class="content col span-8-t span-8-d gutters-t gutters-d">
+    <h1>Learning About Git</h1>
+    <img src="imgs/github-logo.png" alt="#" class="thumb">
     <p>
       For this first entry into my technical blog series, I'm going to look at 3 questions related to the application git. The questions are:
         <ol>
@@ -35,7 +33,7 @@
         </ol>
     </p>
     <p>
-        So the first question is about the benefits of version control, but let's define what version control is first. Version control is a method of keeping multiple versions of a program or system organized and easily accessible for yourself and other developers. Version control creates save states of the code whenever someone enacts a change. This can be tremendously helpful when coding for several reasons. First, it gives you a backup point that you can always flip to if something goes horribly awry. Let's say you add a feature to a website you're working on. Everything seems fine, so you apply the changes and go on your way. Unfortunately, the next day you find that the feature <i>actually</i> crashes the whole website and no one has been able to access it for the past 10 hours. With version control, you can just change your code back to its previously functioning state without needing to go through and undo all the changes you just made. Second, version control allows you to keep track of changes made to the code. If you need to go review a change you made several months ago, you can always find it since changes are listed and dated. Last, version control is very beneficial for teams of coders working on the same project. Imagine there two editors going through a book manuscript and making edits separately. How could they implement their respective changes without coming into conflict? Even if they're working on separate parts of the manuscript (say, one is editing the first half, the other the second half), they will inevitably run into issues. For example, if the second editor decides that a character's name should be spelled differently, the change must be applied across the whole book, not just his half. The same issue applies to two coders trying to work on the same project. Fortunately, version control allows for the code to be updated in very nearly real time, so you can make sure you're not deleting or overwriting a change someone else just made when you add your own updates.
+        So the first question is about the benefits of version control, but let's define what version control is first. Version control is a method of keeping multiple versions of a program or system organized and easily accessible for yourself and other developers. Version control creates save states of the code whenever someone enacts a change. This can be tremendously helpful when coding for several reasons. First, it gives you a backup point that you can always flip to if something goes horribly awry. Let's say you add a feature to a website you're working on. Everything seems fine, so you apply the changes and go on your way. Unfortunately, the next day you find that the feature <em>actually</em> crashes the whole website and no one has been able to access it for the past 10 hours. With version control, you can just change your code back to its previously functioning state without needing to go through and undo all the changes you just made. Second, version control allows you to keep track of changes made to the code. If you need to go review a change you made several months ago, you can always find it since changes are listed and dated. Last, version control is very beneficial for teams of coders working on the same project. Imagine there two editors going through a book manuscript and making edits separately. How could they implement their respective changes without coming into conflict? Even if they're working on separate parts of the manuscript (say, one is editing the first half, the other the second half), they will inevitably run into issues. For example, if the second editor decides that a character's name should be spelled differently, the change must be applied across the whole book, not just his half. The same issue applies to two coders trying to work on the same project. Fortunately, version control allows for the code to be updated in very nearly real time, so you can make sure you're not deleting or overwriting a change someone else just made when you add your own updates.
     </p>
     <p>
         This leads nicely into git. Git is a version control system that allows programmers to easily make and save changes to their code. Git is fairly simple to learn, but more importantly, it's fast, efficient and effective. Git helps you keep track of changes by creating versions, or "commits", of your code whenever you ask it to. These commits are stored locally on your computer, and you can access them at any point. Additionally, it's common practice to write a short message detailing changes made every time you make a commit. These messages are very important when going back through the list of commits to see what was changed. A simple date will mean very little to you when trying to figure out what you changed, and nothing to another person who might happen to be reviewing your code. Git packages up all these features making it an excellent version control tool.

@@ -8,10 +8,11 @@
 }
   .latest img {
     height: 250px;
-    width: 250px;
-    float: none;
     margin: auto;
     display: block;
+  }
+  .latest:hover {
+    background-color: #bbd4e3;
   }
 
 .older {
@@ -38,22 +39,3 @@
   .older div:hover {
     background-color: #bbd4e3;
   }
-.blogpost {
-  background-color: #9ec2d8;
-  border-radius: 10px;
-  padding: 3%;
-  margin-top: 1.5%;
-  text-align: left;
-}
-  .blogpost h1 {
-    text-align: center;
-  }
-
-  }
-    .blogpost img.bigpic {
-      margin-left: 5%;
-      display: block;
-      float: none;
-      height: 40%;
-      width: 40%;
-    }
