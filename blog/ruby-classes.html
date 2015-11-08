@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/ruby-classes.css">
   <meta charset="utf-8">
   <title>Ruby Classes</title>
@@ -21,10 +21,10 @@
     <a href="http://dwoznicki.github.io/resume.html">Resume</a>
     <a href="http://dwoznicki.github.io/contact.html">Contact</a>
   </nav>
-<section class="content">
-  <article class="blogpost">
+<section class="backdrop container">
+  <article class="content col span-8-t span-8-d gutters-t gutters-d">
     <h1>Ruby Classes</h1>
-    <img src="../imgs/dog.png" alt="#">
+    <img src="../imgs/dog.png" alt="#" class="thumb">
     <p>
       This week, we spent a fair amount of time studying classes in Ruby. Classes are very important in Ruby as they define the characteristics of objects (such as strings, integers, etc.) as well as what methods you can use with them. For example, the string class tells the computer how to handle a string, as well as that the #length method should return an integer equal to the number of characters inside the string. But classes aren't limited to pre existing ones; you can make your own as well. But how would you make a class? What goes into it? Well, we're going to look at a sample class today.
     </p>
@@ -32,7 +32,7 @@
     <p>
       A good way to start is to imagine your class as a real world object. In this case, we're going to make a <code>Dog</code> class.
     </p>
-    <img src="../imgs/dog1.png" alt="#" class="bigpic">
+    <img src="../imgs/dog1.png" alt="#" class="span-8-t span-8-d">
     <p>
       Let's start out by defining our dog class.
     </p>
@@ -61,7 +61,7 @@
     <p>
       This class has four instance variables: <code>@name</code>, <code>@age</code>, <code>@breed</code>, and <code>@bark</code>. When the user creates a new <code>Dog</code>, they can set these instance variables by passing in the three arguments they want to use for their instance of the class. In this case, we'll use this guy:
     </p>
-    <img src="../imgs/dog2.png" alt="#" class="bigpic">
+    <img src="../imgs/dog2.png" alt="#" class="span-8-t span-8-d">
     <pre><code>
       > howard = Dog.new("Howard", 2, "Old English Sheepdog", "Woof woof!")
       =>Dog: @name="Howard", @age=2, @breed="Old English Sheepdog", @bark="Woof woof!"

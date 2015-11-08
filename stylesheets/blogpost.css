@@ -1,3 +1,7 @@
 .content h1 {
   text-align: center;
 }
+
+ol {
+  margin-left: 20%;
+}
